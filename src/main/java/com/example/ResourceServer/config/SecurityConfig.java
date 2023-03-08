@@ -26,26 +26,36 @@ public class SecurityConfig {
 
     @Bean
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.authorizeRequests(authorizeRequests ->
-                        authorizeRequests.anyRequest().authenticated()
-                )
-                .csrf().ignoringRequestMatchers(
-                        new AntPathRequestMatcher("/h2-console/**"))
-            .and()
-                .headers()
-                .addHeaderWriter(new XFrameOptionsHeaderWriter(
-                        XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN))
-            .and()
-                .formLogin()
-                .loginPage("/member/login")
-                .defaultSuccessUrl("/")
-                .failureHandler(customFailureHandler)
-            .and()
-                .logout()
-                .logoutRequestMatcher(new AntPathRequestMatcher("/member/logout"))
-                .logoutSuccessUrl("/")
-                .invalidateHttpSession(true)
+
+        http.mvcMatcher("/articles/**")
+                .authorizeRequests()
+                .mvcMatchers("/articles/**")
+                .access("hasAuthority('SCOPE_articles.read')")
+                .and()
+                .oauth2ResourceServer()
+                .jwt()
         ;
+
+//        http.authorizeRequests(authorizeRequests ->
+//                        authorizeRequests.anyRequest().authenticated()
+//                )
+//                .csrf().ignoringRequestMatchers(
+//                        new AntPathRequestMatcher("/h2-console/**"))
+//            .and()
+//                .headers()
+//                .addHeaderWriter(new XFrameOptionsHeaderWriter(
+//                        XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN))
+//            .and()
+//                .formLogin()
+//                .loginPage("/member/login")
+//                .defaultSuccessUrl("/")
+//                .failureHandler(customFailureHandler)
+//            .and()
+//                .logout()
+//                .logoutRequestMatcher(new AntPathRequestMatcher("/member/logout"))
+//                .logoutSuccessUrl("/")
+//                .invalidateHttpSession(true)
+//        ;
 
         return http.build();
     }
