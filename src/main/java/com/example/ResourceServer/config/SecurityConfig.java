@@ -1,4 +1,4 @@
-package com.example.SampleSecurityLogin.config;
+package com.example.ResourceServer.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

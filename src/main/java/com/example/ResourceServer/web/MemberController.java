@@ -1,8 +1,8 @@
-package com.example.SampleSecurityLogin.web;
+package com.example.ResourceServer.web;
 
-import com.example.SampleSecurityLogin.service.member.MemberService;
-import com.example.SampleSecurityLogin.utils.dto.ErrorMsg;
-import com.example.SampleSecurityLogin.web.form.MemberCreateForm;
+import com.example.ResourceServer.service.member.MemberService;
+import com.example.ResourceServer.utils.dto.ErrorMsg;
+import com.example.ResourceServer.web.form.MemberCreateForm;
 import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;

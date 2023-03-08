@@ -1,4 +1,4 @@
-package com.example.SampleSecurityLogin.web;
+package com.example.ResourceServer.web;
 
 import javax.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;

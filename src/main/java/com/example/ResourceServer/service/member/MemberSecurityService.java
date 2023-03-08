@@ -1,8 +1,8 @@
-package com.example.SampleSecurityLogin.service.member;
+package com.example.ResourceServer.service.member;
 
-import com.example.SampleSecurityLogin.domain.member.Member;
-import com.example.SampleSecurityLogin.domain.member.MemberRepository;
-import com.example.SampleSecurityLogin.domain.member.MemberRole;
+import com.example.ResourceServer.domain.member.Member;
+import com.example.ResourceServer.domain.member.MemberRepository;
+import com.example.ResourceServer.domain.member.MemberRole;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

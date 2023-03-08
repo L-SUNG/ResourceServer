@@ -1,4 +1,4 @@
-package com.example.SampleSecurityLogin.config;
+package com.example.ResourceServer.config;
 
 
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;

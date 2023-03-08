@@ -41,9 +41,9 @@
 
 2. 로그인 예외처리 메세지 표시처리
    + 인증 프로바이더를 작성하여 예외 패턴별 Exception 작성
-     > [config.AuthProvider](./src/main/java/com/example/SampleSecurityLogin/config/AuthProvider.java)
+     > [config.AuthProvider](./src/main/java/com/example/ResourceServer/config/AuthProvider.java)
    + 인증 실패 핸들러를 작성하여 Exception 별 에러 메세지 설정
-     > [config.AuthFailuerHandler](./src/main/java/com/example/SampleSecurityLogin/config/AuthFailuerHandler.java)
+     > [config.AuthFailuerHandler](./src/main/java/com/example/ResourceServer/config/AuthFailuerHandler.java)
    + GET으로 리다이렉트 되어지며 설정된 RequestParam를 취득하여 모델에 설정
-     > [web.MemberController](./src/main/java/com/example/SampleSecurityLogin/web/MemberController.java)
+     > [web.MemberController](./src/main/java/com/example/ResourceServer/web/MemberController.java)
    + 참고자료:https://dev-coco.tistory.com/126, https://dabok407.tistory.com/37

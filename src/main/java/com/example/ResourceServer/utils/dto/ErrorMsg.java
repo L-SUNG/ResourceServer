@@ -1,4 +1,4 @@
-package com.example.SampleSecurityLogin.utils.dto;
+package com.example.ResourceServer.utils.dto;
 
 import lombok.Setter;
 

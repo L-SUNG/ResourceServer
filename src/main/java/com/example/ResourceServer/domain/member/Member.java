@@ -1,7 +1,7 @@
-package com.example.SampleSecurityLogin.domain.member;
+package com.example.ResourceServer.domain.member;
 
 import javax.persistence.*;
-import lombok.Builder;
+
 import lombok.Getter;
 import lombok.Setter;
 

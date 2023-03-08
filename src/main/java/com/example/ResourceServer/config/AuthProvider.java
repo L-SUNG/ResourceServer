@@ -1,6 +1,6 @@
-package com.example.SampleSecurityLogin.config;
+package com.example.ResourceServer.config;
 
-import com.example.SampleSecurityLogin.service.member.MemberSecurityService;
+import com.example.ResourceServer.service.member.MemberSecurityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.Authentication;

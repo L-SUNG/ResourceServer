@@ -1,7 +1,7 @@
-package com.example.SampleSecurityLogin.service.member;
+package com.example.ResourceServer.service.member;
 
-import com.example.SampleSecurityLogin.domain.member.Member;
-import com.example.SampleSecurityLogin.domain.member.MemberRepository;
+import com.example.ResourceServer.domain.member.Member;
+import com.example.ResourceServer.domain.member.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
